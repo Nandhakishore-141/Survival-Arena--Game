@@ -1,0 +1,168 @@
+body{
+  margin:0;
+  overflow:hidden;
+  background:#000;
+  font-family:Arial;
+  color:white;
+}
+
+#arena{
+  width:100vw;
+  height:100vh;
+  background:#070707;
+  position:relative;
+  overflow:hidden;
+}
+
+.player{
+  width:40px;
+  height:40px;
+  position:absolute;
+  border-radius:8px;
+  transition:transform 0.08s;
+}
+
+.skull{
+  position:absolute;
+  font-size:26px;
+}
+
+#joystick{
+  position:fixed;
+  bottom:40px;
+  left:40px;
+  width:120px;
+  height:120px;
+  background:rgba(255,255,255,0.05);
+  border-radius:50%;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:50;
+}
+
+#stick{
+  width:50px;
+  height:50px;
+  background:rgba(255,255,255,0.2);
+  border-radius:50%;
+}
+
+.boss{
+  position:absolute;
+  font-size:100px;
+}
+
+.bullet{
+  position:absolute;
+  width:18px;
+  height:6px;
+  background:linear-gradient(90deg,#ffff00,#ffd000);
+  border-radius:3px;
+  box-shadow:0 0 10px yellow;
+}
+
+.power{
+  position:absolute;
+  font-size:26px;
+}
+
+#topUI{
+  position:fixed;
+  top:10px;
+  left:10px;
+  z-index:5;
+  font-size:18px;
+}
+
+#hpContainer{
+  position:fixed;
+  top:35px;
+  left:10px;
+  width:220px;
+  height:16px;
+  background:#222;
+  border-radius:6px;
+  z-index:5;
+}
+
+#hpBar{
+  height:100%;
+  width:100%;
+  background:lime;
+  border-radius:6px;
+}
+
+#storeBtn{
+  position:fixed;
+  top:10px;
+  right:10px;
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:linear-gradient(45deg,#111,#444);
+  color:white;
+  z-index:5;
+}
+
+#storeBtn:hover{
+  background:linear-gradient(45deg,#444,#777);
+}
+
+#overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.95);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:10;
+}
+
+.btn{
+  padding:12px 30px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  margin-top:15px;
+  background:linear-gradient(45deg,#333,#777);
+  color:white;
+}
+
+.btn:hover{
+  background:linear-gradient(45deg,#777,#aaa);
+  color:black;
+}
+
+#storePopup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.97);
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  z-index:20;
+}
+
+.colorItem{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:12px;
+}
+
+.colorBox{
+  width:50px;
+  height:50px;
+  border-radius:8px;
+  margin-bottom:6px;
+}
+
+#storeItems{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}

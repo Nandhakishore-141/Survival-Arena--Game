@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dark Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="topUI">
+  Score: <span id="score">0</span>
+</div>
+
+<div id="hpContainer">
+  <div id="hpBar"></div>
+</div>
+
+<button id="storeBtn">STORE</button>
+
+<div id="arena"></div>
+
+<div id="overlay">
+  <h1>Dark Arena</h1>
+  <button class="btn" id="playBtn">PLAY</button>
+</div>
+
+<div id="storePopup">
+  <h2>STORE</h2>
+  <p>Total Score: <span id="totalScore">0</span></p>
+  <div id="storeItems"></div>
+  <button class="btn" onclick="closeStore()">Close</button>
+</div>
+
+<script src="game.js"></script>
+<div id="joystick">
+  <div id="stick"></div>
+</div>
+</body>
+</html>
